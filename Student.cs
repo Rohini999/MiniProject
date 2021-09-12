@@ -6,7 +6,6 @@ using System.Data;
 using System.Data.SqlClient;
 namespace Model3
 {
-
     public class Student
     {
         public int stud_id { get; set; }
@@ -21,6 +20,8 @@ namespace Model3
         public string stuname { get; set; }
         public int grpoint { get; set; }
         public int stuid { get; set; }
+
+
 
         //public list<student> gtsturec()
         //{
@@ -41,8 +42,4 @@ namespace Model3
 
     }
 }
-
-
-
-
 

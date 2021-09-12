@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccesslayer\DataAccesslayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DataAccesslayer">
+      <HintPath>..\DataAccesslayer\bin\Debug\net5.0\DataAccesslayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Model1">
+      <HintPath>..\Model1\bin\Debug\net5.0\Model1.dll</HintPath>
+    </Reference>
+    <Reference Include="model3">
+      <HintPath>..\model3\bin\Debug\net5.0\model3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

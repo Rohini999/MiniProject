@@ -10,6 +10,7 @@ namespace DataAccesslayer
         static string constr = "data source=DESKTOP-3N725GL\\SQLEXPRESS;initial catalog=Academy;integrated security=True;";
         public void DisplayStudent()
         {
+
             DataTable DT = ExecuteData("select * from TA");
             if (DT.Rows.Count > 0)
             {
@@ -40,8 +41,7 @@ namespace DataAccesslayer
             string Stud_Batch = string.Empty;
             int Stud_Mark1;
             int Stud_Mark2;
-           // int Stud_Result;
-            string Stud_Result = string.Empty;
+            int Stud_Result;
 
 
             Console.WriteLine("Insert new Student: ");
@@ -124,19 +124,17 @@ namespace DataAccesslayer
 
 
 
-
-
             Console.Write("Enter Stud_Result: ");
-            //Stud_Result = Convert.ToInt32(Console.ReadLine());
-            //if (((Stud_Mark1 + Stud_Mark2) / 2) > 30)
-            //{
-            //    Console.WriteLine("Student Fail");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Student Pass"); 
-            //}
-           Stud_Result = Console.ReadLine();
+            Stud_Result = Convert.ToInt32(Console.ReadLine());
+            if (((Stud_Mark1 + Stud_Mark2) / 2) > 30)
+            {
+                Console.WriteLine("Student Fail");
+            }
+            else
+            {
+                Console.WriteLine("Student Pass"); 
+            }
+           // Stud_Result = Console.ReadLine();
 
             
 
